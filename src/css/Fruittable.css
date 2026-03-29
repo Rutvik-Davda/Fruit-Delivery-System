@@ -1,0 +1,141 @@
+
+.fruit-table-page {
+  padding: 30px;
+}
+
+
+.fruit-table-title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+
+.fruit-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.fruit-table th,
+.fruit-table td {
+  border: 3px solid #ddd;
+  padding: 12px;
+  text-align: center; 
+}
+
+
+.fruit-table thead {
+  background-color: blue;
+  color: #fff;
+}
+
+
+.fruit-table-img {
+  width: 90px;   
+  height: 90px; 
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+.remove-icon {
+  width: 28px;
+  cursor: pointer;
+}
+
+
+.cart-total-table {
+  width: 40%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.cart-total-table td {
+  border: 3px solid black;
+  padding: 12px;
+  text-align: center;
+}
+
+
+.payment-btn {
+  margin-top: 25px;
+  background-color: tomato;
+  color: white;
+  padding: 14px 35px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.payment-btn:hover {
+  transform: scale(1.05);
+}
+
+
+
+.fruit-table-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: orangered;
+  margin-bottom: 30px;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .cart-total-table {
+    width: 100%;
+  }
+
+  .fruit-table-img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+
+
+
+.pagination-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
+  gap: 8px;
+  padding: 0;
+}
+.pagination .page-link {
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #6dd5fa, #4facfe);
+  color: #ffffff;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+
+.pagination .page-link:hover {
+  background: linear-gradient(135deg, #4facfe, #2c8cff);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(79, 172, 254, 0.35);
+}
+
+
+.pagination .active .page-link {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  font-weight: 700;
+  box-shadow: 0 6px 16px rgba(30, 60, 114, 0.45);
+}

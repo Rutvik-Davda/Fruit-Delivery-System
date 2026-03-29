@@ -1,0 +1,213 @@
+.fb-reply-page-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 60px 0;
+}
+
+.fb-reply-parent-card {
+  width: 91%;
+  background-color: green;  
+  padding: 30px;
+  border-radius: 18px;
+}
+
+.fb-reply-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.fb-reply-child-card {
+  height: 250px;
+  background-color: white;
+  border: 2px solid green;
+  border-radius: 14px;
+}
+
+@media (max-width: 900px) {
+  .fb-reply-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .fb-reply-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .fr-wrapper {
+    padding: 30px 15px;
+  }
+
+  .fr-card {
+    margin-bottom: 20px;
+    padding: 18px;
+  }
+
+  .fr-card h4 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .fr-card p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .fr-delete-icon {
+    width: 26px;
+    margin: 12px auto 0;
+    display: block;
+  }
+
+  .fr-pagination {
+    margin-top: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+
+
+
+
+
+
+@media (max-width: 576px) {
+
+  .fr-wrapper {
+    padding: 25px 12px;
+  }
+
+  .fr-card {
+    padding: 16px;
+  }
+
+  .fr-card h4 {
+    font-size: 16px;
+  }
+
+  .fr-card p {
+    font-size: 13px;
+  }
+
+  .fr-delete-icon {
+    width: 24px;
+  }
+
+  .fr-page-btn {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+}
+
+
+
+@media (max-width: 375px) {
+
+  .fr-wrapper {
+    padding: 20px 10px;
+  }
+
+  .fr-card {
+    padding: 14px;
+  }
+
+  .fr-card h4 {
+    font-size: 15px;
+  }
+
+  .fr-card p {
+    font-size: 12px;
+  }
+
+  .fr-delete-icon {
+    width: 22px;
+  }
+
+  .fr-page-btn {
+    padding: 5px 8px;
+    font-size: 12px;
+  }
+}
+
+
+
+.fb-reply-page-wrapper {
+  padding: 40px 20px;
+}
+
+.fb-reply-parent-card {
+  margin: 0 auto;
+}
+
+.fb-reply-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.fb-reply-child-card {
+
+  border-radius: 14px;
+  padding: 22px 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fb-reply-child-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.12);
+}
+
+.fb-reply-child-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 12px;
+  color: #222;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.fb-reply-child-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #000;
+  text-align: justify;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+@media (max-width: 992px) {
+  .fb-reply-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .fb-reply-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fb-reply-child-card {
+    padding: 18px 16px;
+  }
+
+  .fb-reply-child-card h3 {
+    font-size: 18px;
+  }
+
+  .fb-reply-child-card p {
+    font-size: 14px;
+  }
+}
+
+.fb-reply-child-card p {
+  line-height: 1.8;   
+  margin-top: 10px;
+  text-align: justify;
+}

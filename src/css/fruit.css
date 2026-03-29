@@ -1,0 +1,596 @@
+.btn-grid {
+  display: grid;
+  grid-template-columns: 1fr; 
+  margin-top: 20px;
+}
+
+.cart-btn {
+  justify-self: end;           
+  margin-right: 1cm;  
+
+  background: linear-gradient(135deg, #ff9800, #ff5722);
+  color: white;
+  padding: 10px 22px;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-grid {
+  position: relative;
+  top: -1cm;
+}
+ 
+/* .cart-btn:active {
+  animation: shake 0.4s;
+}
+
+@keyframes shake {
+  0%   { transform: translateX(0); }
+  25%  { transform: translateX(-6px); }
+  50%  { transform: translateX(6px); }
+  75%  { transform: translateX(-6px); }
+  100% { transform: translateX(0); }
+} */
+
+
+.cart-btn:hover {
+  background: linear-gradient(135deg, #ff5722, #e64a19);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 600px) {
+  .cart-btn {
+    justify-self: stretch;   
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fruit-section {
+  padding: 40px 0;
+}
+
+.fruit-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.fruit-card:hover {
+  transform: translateY(-5px);
+}
+
+.fruit-img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  transition: 0.3s;
+}
+
+.fruit-card:hover .fruit-img {
+  transform: scale(1.05);
+}
+
+.fruit-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.fruit-weight {
+  color: gray;
+  font-size: 14px;
+}
+
+.fruit-price {
+  color: green;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.qty-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.qty-btn {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background-color: #333;
+  color: white;
+  font-size: 18px;
+  border-radius: 4px;
+}
+
+.qty-number {
+  font-weight: 600;
+}
+
+.add-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #1b5e20, #2e7d32);
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+
+}
+
+
+.add-btn:hover {
+  background: linear-gradient(135deg, #2e7d32, #66bb6a);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+.add-btn:active {
+  transform: scale(0.97);
+}
+
+
+
+
+
+
+
+.fruit-section .row {
+  display: flex;
+  flex-wrap: wrap;            
+  justify-content: center;
+}
+
+.fruit-section .row > div {
+  flex: 0 0 33.3333%;          
+  max-width: 33.3333%;
+  padding: 12px;
+}
+
+.fruit-card {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 6px;
+  padding: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.fruit-img-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+
+.fruit-heart-circle {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+  width: 46px;
+  height: 46px;
+
+  border-radius: 50%;
+  border: 2px solid #c89b3c; 
+  background: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 5;
+}
+
+
+.fruit-heart-icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+
+
+
+
+
+
+
+
+.fruit-heart-circle {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 2px solid goldenrod;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.fruit-heart-icon {
+  width: 22px;
+  height: 22px;
+  /* filter: grayscale(100%); */
+  transition: 0.3s ease;
+}
+
+.fruit-heart-icon.heart-active {
+  filter: brightness(0) saturate(100%) invert(18%)
+          sepia(95%) saturate(7500%)
+          hue-rotate(355deg) brightness(95%) contrast(110%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== Google Map ===== */
+.fruit-map-section {
+  width: 100%;
+  height: 320px;
+}
+.fruit-map-section iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* ===== Footer ===== */
+.fruit-footer {
+  background: linear-gradient(180deg, #0b1222, #0a0f1c);
+  padding: 70px 0 25px;
+  color: #cfd3dc;
+}
+
+.fruit-footer-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.fruit-footer-col {
+  flex: 1;
+  min-width: 220px;
+}
+
+.fruit-footer-brand {
+  color: #2ef2b4;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.fruit-footer-title {
+  color: #2ef2b4;
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+.fruit-footer-text {
+  font-size: 15px;
+  line-height: 26px;
+  max-width: 90%;
+}
+
+.fruit-footer-social {
+  display: flex;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.fruit-footer-social img {
+  width: 34px;
+  height: 34px;
+  background: #e9eef3;
+  padding: 7px;
+  border-radius: 50%;
+}
+
+.fruit-footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.fruit-footer-links li {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.fruit-footer-contact {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+  font-size: 15px;
+}
+
+.fruit-contact-icon {
+  width: 34px;
+  height: 34px;
+  background: #e9eef3;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fruit-contact-icon img {
+  width: 16px;
+  height: 16px;
+}
+
+.fruit-footer-hours {
+  list-style: none;
+  padding: 0;
+}
+
+.fruit-footer-hours li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+.fruit-footer-hours b {
+  color: #fff;
+}
+
+.fruit-footer-bottom {
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.15);
+  text-align: center;
+  font-size: 14px;
+  color: #b7bcc7;
+}
+
+
+
+
+
+
+@media (max-width: 1024px) {
+  .fruit-footer {
+    padding: 60px 30px 25px;
+  }
+
+  .fruit-footer-row {
+    gap: 40px;
+  }
+
+  .fruit-footer-text {
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .fruit-footer {
+    padding: 50px 20px 20px;
+    text-align: center;
+  }
+
+  .fruit-footer-row {
+    flex-direction: column;   /* 🔥 columns stack */
+    align-items: center;
+    gap: 35px;
+  }
+
+  .fruit-footer-col {
+    min-width: 100%;
+  }
+
+  .fruit-footer-social {
+    justify-content: center;
+  }
+
+  .fruit-footer-contact {
+    justify-content: center;
+  }
+
+  .fruit-footer-hours li {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 768px) {
+  .fruit-map-section {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fruit-map-section {
+    height: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fruit-footer {
+    padding: 40px 15px 18px;
+  }
+
+  .fruit-footer-brand {
+    font-size: 20px;
+  }
+
+  .fruit-footer-title {
+    font-size: 16px;
+  }
+
+  .fruit-footer-text,
+  .fruit-footer-links li,
+  .fruit-footer-contact,
+  .fruit-footer-hours li {
+    font-size: 14px;
+  }
+
+  .fruit-footer-bottom {
+    font-size: 13px;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .fruit-section {
+    padding: 30px 15px;
+  }
+
+  .fruit-card {
+    padding: 14px;
+  }
+
+  .fruit-img {
+    height: 160px;
+    object-fit: contain;
+  }
+
+  .fruit-name {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .fruit-price {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .qty-box {
+    justify-content: center;
+  }
+}
+
+
+
+
+
+
+
+@media (max-width: 576px) {
+  .fruit-card {
+    padding: 12px;
+    border-radius: 14px;
+  }
+
+  .fruit-img {
+    height: 140px;
+  }
+
+  .fruit-name {
+    font-size: 15px;
+  }
+
+  .fruit-weight {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .add-btn {
+    width: 100%;
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .qty-btn {
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+@media (max-width: 375px) {
+  .fruit-section {
+    padding: 20px 10px;
+  }
+
+  .fruit-img {
+    height: 120px;
+  }
+
+  .fruit-name {
+    font-size: 14px;
+  }
+
+  .fruit-price {
+    font-size: 14px;
+  }
+
+  .add-btn {
+    font-size: 13px;
+    padding: 7px;
+  }
+
+  .fruit-card {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  }
+}

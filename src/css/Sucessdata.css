@@ -1,0 +1,39 @@
+.success-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 60px;
+  background: #f4f4f4;
+}
+
+.success-box {
+  width: 500px;
+  background: #fff;
+  padding: 25px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.success-video {
+  width: 220px;
+  margin-bottom: 15px;
+}
+
+.success-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: black;
+}
+
+.success-download-btn {
+  margin-top: 18px;
+  background: green;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+

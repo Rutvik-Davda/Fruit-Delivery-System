@@ -1,0 +1,95 @@
+.ff-main-wrapper {
+  padding: 40px 10px;
+  background-color: #ffffff;
+}
+
+
+.ff-title-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.ff-title-text {
+  background: #f4f4f4;
+  padding: 12px 40px;
+  font-weight: bold;
+  color: blue;
+  border-radius: 6px;
+}
+
+.ff-card {
+  margin: 15px;            
+  padding: 15px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: all 0.3s ease; 
+}
+.ff-card:hover {
+  transform: translateY(-6px) scale(1.02);  
+  box-shadow: 0 10px 22px rgba(0,0,0,0.18);
+  cursor: pointer;
+}
+
+
+.ff-card-image {
+  width: 100%;
+
+  object-fit: contain;
+}
+
+.ff-name-box {
+  margin-top: 12px;
+  padding: 8px;
+  background: #f7f7f7;
+  border-radius: 5px;
+
+}
+
+.ff-card:hover .ff-name-box {
+  background: #eaeaea;
+}
+
+
+.ff-fruit-name {
+  font-weight: bold;
+  color: #000;
+  display: block;
+  text-align: center;  
+}
+
+
+
+@media (max-width: 576px) {
+  .ff-card-image {
+    height: 150px;
+  }
+}
+
+
+
+
+
+
+@media (max-width: 576px) {
+  .ff-card {
+    min-height: 240px;
+  }
+
+  .ff-card-image {
+    height: 160px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ff-card {
+    min-height: 260px;
+  }
+
+  .ff-card-image {
+    height: 180px;
+  }
+}
+

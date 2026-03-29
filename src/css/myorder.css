@@ -1,0 +1,263 @@
+/* Page wrapper */
+.salon1-wrapper {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Title */
+.salon1-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+/* Grid layout */
+.salon1-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Order Card */
+.salon1-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 18px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: 0.2s ease;
+}
+
+.salon1-card:hover {
+  transform: translateY(-3px);
+}
+
+/* Order ID */
+.salon1-card-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Order Items */
+.order-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0;
+}
+
+/* Item Image */
+.order-item img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* Item Text */
+.order-item p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Order Status */
+.order-status {
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Pending */
+.order-status.pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+/* Delivered */
+.order-status.delivered {
+  background: #d4edda;
+  color: #155724;
+}
+
+/* Cancelled */
+.order-status.cancelled {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+/* Total */
+.salon1-card h3:last-child {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #222;
+}
+/* Order info rows (Date, Status etc) */
+.order-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 6px 0;
+  font-size: 13px;
+}
+
+/* Label text */
+.order-label {
+  font-weight: 600;
+  color: #555;
+  font-size: 12px;
+}
+
+/* Value text */
+.order-value {
+  font-size: 13px;
+  color: #222;
+}
+
+/* Status badge */
+.order-status {
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Status colors */
+.order-status.pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.order-status.delivered {
+  background: #d4edda;
+  color: #155724;
+}
+
+.order-status.cancelled {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.pagination-wrapper{
+  margin-top:30px;
+  display:flex;
+  justify-content:center;
+}
+
+.pagination{
+  display:flex;
+  list-style:none;
+  gap:8px;
+}
+
+.page-item{
+  cursor:pointer;
+}
+
+.page-link{
+  padding:6px 12px;
+  border:1px solid #ddd;
+  border-radius:5px;
+}
+
+.active .page-link{
+  background:#4caf50;
+  color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* New */
+
+/* ===== ORDER PAGE BACKGROUND (Only this page) ===== */
+.salon1-wrapper{
+background: linear-gradient(135deg,#2ecc71,#1e8449);
+min-height:100vh;
+padding:40px;
+}
+
+/* ===== GRID ===== */
+.salon1-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+/* ===== ORDER CARD ===== */
+.salon1-card{
+background:#0d6efd;
+border-radius:12px;
+padding:20px;
+box-shadow:0 6px 15px rgba(0,0,0,0.15);
+transition:0.3s;
+}
+
+/* Hover effect */
+.salon1-card:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 20px rgba(0,0,0,0.25);
+}
+
+/* ===== TITLE ===== */
+.salon1-title{
+text-align:center;
+color:white;
+font-weight:700;
+margin-bottom:30px;
+}
+
+/* ===== CARD TITLE ===== */
+.salon1-card-title{
+color:white;
+font-weight:700;
+}
+
+/* ===== ORDER ROW ===== */
+.order-row{
+display:flex;
+justify-content:space-between;
+margin-bottom:8px;
+}
+
+.order-label{
+color:white;
+font-weight:600;
+}
+
+.order-value{
+color:white;
+font-weight:600;
+}
+
+/* ===== STATUS ===== */
+.order-status{
+font-weight:700;
+color:white;
+}
+
+/* ===== ORDER ITEMS ===== */
+.order-item{
+display:flex;
+align-items:center;
+gap:10px;
+margin-bottom:10px;
+color:white;
+font-weight:600;
+}
+
+/* ===== TOTAL PRICE ===== */
+.salon1-card h3{
+color:#ffd43b;
+font-weight:700;
+}
