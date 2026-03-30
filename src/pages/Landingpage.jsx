@@ -4,7 +4,7 @@ import "../css/navbar.css";
 import fruitLogo from "../assets/images/right-logo.png";
 import Ourmenu from '../components/landingpage/Ourmenu';
 import { useNavigate } from 'react-router-dom'
-import FruitImg from "../assets/images/Fruit.jpg";
+import FruitImg from "../assets/images/fruit.jpg";
 import Homepage2 from '../components/landingpage/Homepage2';
 import Part1 from '../components/landingpage/Part1';
 import Part2 from '../components/landingpage/Part2';
