@@ -1,5 +1,5 @@
 import React from "react";
-import "../../css/Homepage2.css";
+import "../../css/homepage2.css";
 
 import truckIcon from "../../assets/images/truck2.png";
 import shieldIcon from "../../assets/images/shield.png";
