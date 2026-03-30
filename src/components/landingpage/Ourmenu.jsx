@@ -3,12 +3,12 @@ import "../../css/ourmenu.css";
 
 import apple from "../../assets/images/apple.jpg";
 import orange from "../../assets/images/orange.jpg";
-import pineapple from "../../assets/images/pineapple.jpg";
-import kiwi from "../../assets/images/kiwi.jpg";
-import litchi from "../../assets/images/litchi.jpg";
-import strawberry from "../../assets/images/strawberry.jpg";
-import cherry from "../../assets/images/cherry.jpg";
-import avocado from "../../assets/images/avocado.jpg";
+import pineapple from "../../assets/images/Pineapple.jpg";
+import kiwi from "../../assets/images/Kiwi.jpg";
+import litchi from "../../assets/images/Litchi.jpg";
+import strawberry from "../../assets/images/Strawberry.jpg";
+import cherry from "../../assets/images/Cherry.jpg";
+import avocado from "../../assets/images/Avocado.jpg";
 
 function Ourmenu() {
   return (
